@@ -90,7 +90,7 @@ class Nos_Plugin implements Typecho_Plugin_Interface{
         try{
            $ins->uploadFile($option->bucket,$savename, $filename);
             
-        } catch(\NOS\NosExceptionNosException $e) {
+        } catch(NosException $e) {
             return false;
         }
         
